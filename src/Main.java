@@ -8,10 +8,15 @@ public class Main {
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Please enter 2 Numbers to add!");
-        x=sc.nextFloat();
-        y=sc.nextFloat();
+        try {
+            x = sc.nextFloat();
+            y = sc.nextFloat();
 
-        result=x+y;
-        System.out.println("Result: " + result);
+            result = x + y;
+            System.out.println("Result: " + result);
+        }catch(Exception e) {
+            System.out.println("An error got detected");
+        }
     }
 }
+
